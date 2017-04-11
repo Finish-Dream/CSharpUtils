@@ -7,7 +7,7 @@
 using System;
 using System.IO;
 
-namespace OPCAdapter
+namespace CSharpUtils
 {
     public class WriteLog
     {

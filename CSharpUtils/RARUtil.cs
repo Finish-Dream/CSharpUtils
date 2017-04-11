@@ -25,9 +25,9 @@ namespace CSharpUtils
         /// <summary>
         /// 利用 WinRAR 进行压缩     
         /// </summary>
-        /// <param name="savePath">将要被压缩的文件（绝对路径）</param>
-        /// <param name="rarPath">压缩后的存放目录（绝对路径）</param>
-        /// <param name="rarName">压缩文件的名称（包括后缀）</param>
+        /// <param name="savePath">文件的存放目录（绝对路径，压缩前）</param>
+        /// <param name="rarPath">文件的存放目录（绝对路径,压缩后）</param>
+        /// <param name="rarName">文件的名称（包括后缀，压缩后）</param>
         /// <returns>true 或 false。压缩成功返回 true，反之，false。</returns>    
         public static bool RAR(string savePath, string rarPath, string rarName)
         {
@@ -72,9 +72,9 @@ namespace CSharpUtils
         /// <summary>
         /// 利用 WinRAR 进行解压缩     
         /// </summary>
-        /// <param name="rarPath">文件的存放目录（绝对路径）</param>
-        /// <param name="rarName">文件名（包括后缀）</param>
-        /// <param name="savePath">文件解压后存放路径（绝对）</param>
+        /// <param name="rarPath">文件的存放路径（绝对路径，解压前）</param>
+        /// <param name="rarName">文件名（包括后缀，解压前）</param>
+        /// <param name="savePath">文件的存放路径（绝对路径，解压后）</param>
         /// <returns>true 或 false。解压缩成功返回 true，反之，false。</returns>  
         public static Boolean UnRAR(string rarPath, string rarName, string savePath)
         {
