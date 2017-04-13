@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSharpUtils</name>
+    </assembly>
+    <members>
+        <member name="T:CSharpUtils.DirectoryUtil">
+            <summary>
+            目录操作类
+            </summary>
+        </member>
+        <member name="M:CSharpUtils.DirectoryUtil.foreachAllFile(System.String)">
+            <summary>
+            遍历指定文件夹中的所有文件 
+            </summary>
+            <param name="dirPath">父文件夹</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharpUtils.DirectoryUtil._foreachAllFile(System.String)">
+            <summary>
+            _遍历指定文件夹中的所有文件 
+            </summary>
+            <param name="dirPath">父文件夹</param>
+        </member>
+        <member name="T:CSharpUtils.ExcelUtil">
+            <summary>
+            Excel操作类
+            </summary>
+        </member>
+        <member name="M:CSharpUtils.ExcelUtil.GetExcelData(System.IO.FileInfo,System.String)">
+            <summary>
+            获取Excel中数据
+            </summary>
+            <param name="fileInfo">文件所在路径</param>
+            <param name="tableName">表名</param>
+            <returns></returns>
+        </member>
+        <member name="T:CSharpUtils.HttpFileUtil">
+            <summary>
+            客户端上传文件操作类
+            </summary>
+        </member>
+        <member name="M:CSharpUtils.HttpFileUtil.SaveFile(System.Web.HttpPostedFile,System.String)">
+            <summary>
+            保存单独文件到指定路径
+            </summary>
+            <param name="file">待保存文件</param>
+            <param name="savePath">文件保存路径(包括文件名和扩展名)</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharpUtils.HttpFileUtil.SaveFile(System.Web.HttpPostedFile,System.String,System.String)">
+            <summary>
+            保存单独文件到指定路径
+            </summary>
+            <param name="file">待保存文件</param>
+            <param name="savePath">文件保存路径(不包括文件名和扩展名)</param>
+            <param name="fileName">文件名（包含扩展名）</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharpUtils.HttpFileUtil.SaveFiles(System.Web.HttpFileCollection,System.String)">
+            <summary>
+            保存所有文件到指定目录
+            </summary>
+            <param name="files">所有待保存文件</param>
+            <param name="savePath">文件保存路径（不包含文件名和扩展名）</param>
+            <returns></returns>
+        </member>
+        <member name="T:CSharpUtils.RARUtil">
+            <summary>
+            压缩文件操作类
+            </summary>
+        </member>
+        <member name="M:CSharpUtils.RARUtil.RAR(System.String,System.String,System.String)">
+            <summary>
+            利用 WinRAR 进行压缩     
+            </summary>
+            <param name="savePath">文件的存放目录（绝对路径，压缩前）</param>
+            <param name="rarPath">文件的存放目录（绝对路径,压缩后）</param>
+            <param name="rarName">文件的名称（包括后缀，压缩后）</param>
+            <returns>true 或 false。压缩成功返回 true，反之，false。</returns>    
+        </member>
+        <member name="M:CSharpUtils.RARUtil.UnRAR(System.String,System.String,System.String)">
+            <summary>
+            利用 WinRAR 进行解压缩     
+            </summary>
+            <param name="rarPath">文件的存放路径（绝对路径，解压前）</param>
+            <param name="rarName">文件名（包括后缀，解压前）</param>
+            <param name="savePath">文件的存放路径（绝对路径，解压后）</param>
+            <returns>true 或 false。解压缩成功返回 true，反之，false。</returns>  
+        </member>
+    </members>
+</doc>
