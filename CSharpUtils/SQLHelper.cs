@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 
 
-namespace DAL
+namespace CSharpUtils
 {
     /// <summary>
     /// 数据库助手类
